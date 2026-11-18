@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Assistant - AI FAQ Chatbot | Task 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header">
+        <div class="logo">CodeAlpha<span> Assistant</span></div>
+        <div class="badge">● ONLINE</div>
+    </div>
+
+    <div class="card">
+        <div class="chat-header">
+            <div class="avatar">AI</div>
+            <div>
+                <h3>CodeAlpha Support Bot</h3>
+                <p>Ask about Internship, Certificate & Tasks</p>
+            </div>
+            <span class="status">Active</span>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="msg bot-msg">
+                Hello! 👋 I'm the CodeAlpha AI Assistant.<br>
+                I can help you with Internship Duration, Certificate, Tasks, and Technical Concepts like Python, NLTK & Cosine Similarity.
+            </div>
+        </div>
+
+        <p class="quick-title">Suggested Questions:</p>
+        <div class="quick-btns">
+            <button onclick="askQuick('What is the internship duration?')">Internship Duration?</button>
+            <button onclick="askQuick('When will I get the certificate?')">Certificate?</button>
+            <button onclick="askQuick('How many tasks do I need to complete?')">Tasks?</button>
+            <button onclick="askQuick('Is the internship free?')">Fees?</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your question here..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">Send ➤</button>
+        </div>
+    </div>
+
+    <p class="footer">Developed by <b>Muhammad Yasir</b> | CodeAlpha AI Internship - Task 2</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+                          </html>
